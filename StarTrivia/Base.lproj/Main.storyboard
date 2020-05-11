@@ -180,6 +180,9 @@
                                 <state key="normal" title="$Random#">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="randomClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7E9-T9-ABK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -200,6 +203,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="It0-FW-d9m"/>
+                    <connections>
+                        <outlet property="birthYearLbl" destination="dCl-Ay-Rxg" id="Y1c-bN-w0J"/>
+                        <outlet property="genderLbl" destination="gSU-Zh-coD" id="O1D-ge-xJc"/>
+                        <outlet property="hairLbl" destination="wfG-o8-Yb8" id="o8G-uf-gQU"/>
+                        <outlet property="heightLbl" destination="3EQ-6F-LTx" id="bEV-Co-rf8"/>
+                        <outlet property="massLbl" destination="4kj-E5-aa0" id="izc-2o-Wzw"/>
+                        <outlet property="nameLbl" destination="ivx-0R-kom" id="Fnh-uq-d01"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
