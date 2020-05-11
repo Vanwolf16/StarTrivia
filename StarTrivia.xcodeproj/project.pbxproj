@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B46097612469127800854C49 /* PersonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46097602469127800854C49 /* PersonApi.swift */; };
 		B479DC442468F0DB00F002CA /* BlackBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479DC432468F0DB00F002CA /* BlackBgView.swift */; };
 		B479DC472468F14A00F002CA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479DC462468F14A00F002CA /* Constants.swift */; };
 		B49236212468B80100A89EB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49236202468B80100A89EB3 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B46097602469127800854C49 /* PersonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonApi.swift; sourceTree = "<group>"; };
 		B479DC432468F0DB00F002CA /* BlackBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBgView.swift; sourceTree = "<group>"; };
 		B479DC462468F14A00F002CA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B492361D2468B80100A89EB3 /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B460975F2469125400854C49 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B46097602469127800854C49 /* PersonApi.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		B479DC452468F13700F002CA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 				B492363E2468BAED00A89EB3 /* Model */,
 				B492363D2468BAE900A89EB3 /* View */,
 				B492363C2468BAE200A89EB3 /* Controller */,
+				B460975F2469125400854C49 /* Services */,
 				B479DC452468F13700F002CA /* Utils */,
 				B49236202468B80100A89EB3 /* AppDelegate.swift */,
 				B49236222468B80100A89EB3 /* SceneDelegate.swift */,
@@ -205,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B479DC472468F14A00F002CA /* Constants.swift in Sources */,
+				B46097612469127800854C49 /* PersonApi.swift in Sources */,
 				B49236252468B80100A89EB3 /* SelectPersonVC.swift in Sources */,
 				B479DC442468F0DB00F002CA /* BlackBgView.swift in Sources */,
 				B49236212468B80100A89EB3 /* AppDelegate.swift in Sources */,
