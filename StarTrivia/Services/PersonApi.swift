@@ -13,7 +13,37 @@ import SwiftyJSON
 
 class PersonApi{
     
+    //Web Request with Alamofire with Codable
+    func getRandomPersonAlamo(id:Int,completion:@escaping PersonResponseCompletion){
+       
+        guard let url = URL(string: "\(PERSON_URL)\(id)") else {return}
+        AF.request(url).responseJSON { (response) in
+            if let error = response.error{
+                debugPrint(error.localizedDescription)
+                completion(nil)
+                return
+            }
+            
+            guard let data = response.data else {return completion(nil)}
+            
+            do{
+                let jsonDecoder = JSONDecoder()
+                let person = try jsonDecoder.decode(Person.self, from: data)
+                completion(person)
+            }catch{
+                debugPrint(error.localizedDescription)
+                completion(nil)
+            }
+            
+          
+            
+        }
+        
+    
+    }//end of this Alamo
+    
     //Web Request SwiftyJSON and AlamoFire
+    /*
     func getRandomPersonAlamo(id:Int,completion:@escaping PersonResponseCompletion){
        
         guard let url = URL(string: "\(PERSON_URL)\(id)") else {return}
@@ -41,6 +71,7 @@ class PersonApi{
         
     
     }//end of this Alamo
+    */
     
 
     //Web Request with URL Session
