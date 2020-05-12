@@ -24,6 +24,7 @@ class SelectPersonVC: UIViewController {
     
     
     var personApi = PersonApi()
+    var person:Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,24 +35,58 @@ class SelectPersonVC: UIViewController {
         let random = Int.random(in: 1...87)
         personApi.getRandomPersonAlamo(id: random) { (person) in
             if let person = person{
-                self.nameLbl.text = person.name
-                self.heightLbl.text = person.height
-                self.massLbl.text = person.mass
-                self.birthYearLbl.text = person.birthYear
-                self.genderLbl.text = person.gender
+                self.setupView(person: person)
+                self.person = person
             }
         }
     }
-    @IBAction func homeworldClicked(_ sender: Any) {
+    //Setup the UI View and update it
+    func setupView(person:Person){
+        nameLbl.text = person.name
+        heightLbl.text = person.height
+        massLbl.text = person.mass
+        birthYearLbl.text = person.birthYear
+        genderLbl.text = person.gender
+        
+        homeworldBtn.isEnabled = !person.homeWorldUrl.isEmpty
+        vehicleBtn.isEnabled = !person.vehicleUrls.isEmpty
+        starshipBtn.isEnabled = !person.starshipUrls.isEmpty
+        filmBtn.isEnabled = !person.filmUrls.isEmpty
+        
+        
     }
-    @IBAction func vehicleClicked(_ sender: Any) {
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case Segue.homeworld.rawValue:
+            if let destination = segue.destination as? HomeWorldVC{
+                destination.person = person
+            }
+        case Segue.vehicles.rawValue:
+            if let desination = segue.destination as? VehiclesVC{
+                desination.person = person
+            }
+        case Segue.starships.rawValue:
+            if let desination = segue.destination as? StarShipsVC{
+                desination.person = person
+            }
+        case Segue.films.rawValue:
+            if let desination = segue.destination as? FilmsVC{
+                desination.person = person
+            }
+        default:
+            break
+        }
+        
+        enum Segue:String{
+            case homeworld = "toHomeWorld"
+            case vehicles = "toVehicles"
+            case starships = "toStarships"
+            case films = "toFilms"
+        }
+        
+        
     }
-    @IBAction func starshipsClicked(_ sender: Any) {
-    }
-    @IBAction func filmsClicked(_ sender: Any) {
-    }
-    
-    
     
 }
 
