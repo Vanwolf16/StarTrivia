@@ -17,3 +17,5 @@ let PERSON_URL = URL_BASE + "people/"
 
 //Closure
 typealias PersonResponseCompletion = (Person?) -> Void
+typealias HomeWorldResponseCompletion = (Homeworld?) -> Void
+typealias VehicleResponseCompletion = (Vehicles?) -> Void

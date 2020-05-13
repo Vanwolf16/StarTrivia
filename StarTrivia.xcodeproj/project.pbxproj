@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4018B5F246B799E00D26633 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4018B5E246B799E00D26633 /* Vehicle.swift */; };
+		B4018B61246B7F6300D26633 /* VehicleApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4018B60246B7F6300D26633 /* VehicleApi.swift */; };
+		B429E3CE246B575C0003C7B1 /* Homeworld.swift in Sources */ = {isa = PBXBuildFile; fileRef = B429E3CD246B575C0003C7B1 /* Homeworld.swift */; };
+		B429E3D0246B57B10003C7B1 /* HomeworldApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B429E3CF246B57B10003C7B1 /* HomeworldApi.swift */; };
 		B430A34A246B2E260043F4D8 /* HomeWorldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430A349246B2E260043F4D8 /* HomeWorldVC.swift */; };
 		B430A34C246B2E350043F4D8 /* VehiclesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430A34B246B2E350043F4D8 /* VehiclesVC.swift */; };
 		B430A34E246B2E410043F4D8 /* StarShipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430A34D246B2E410043F4D8 /* StarShipsVC.swift */; };
@@ -30,6 +34,10 @@
 
 /* Begin PBXFileReference section */
 		8B77B474E6CF486332352DDC /* Pods-StarTrivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarTrivia.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarTrivia/Pods-StarTrivia.release.xcconfig"; sourceTree = "<group>"; };
+		B4018B5E246B799E00D26633 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		B4018B60246B7F6300D26633 /* VehicleApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleApi.swift; sourceTree = "<group>"; };
+		B429E3CD246B575C0003C7B1 /* Homeworld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeworld.swift; sourceTree = "<group>"; };
+		B429E3CF246B57B10003C7B1 /* HomeworldApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldApi.swift; sourceTree = "<group>"; };
 		B430A349246B2E260043F4D8 /* HomeWorldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorldVC.swift; sourceTree = "<group>"; };
 		B430A34B246B2E350043F4D8 /* VehiclesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesVC.swift; sourceTree = "<group>"; };
 		B430A34D246B2E410043F4D8 /* StarShipsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShipsVC.swift; sourceTree = "<group>"; };
@@ -87,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				B46097602469127800854C49 /* PersonApi.swift */,
+				B429E3CF246B57B10003C7B1 /* HomeworldApi.swift */,
+				B4018B60246B7F6300D26633 /* VehicleApi.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -179,6 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				B460976224691ABF00854C49 /* Person.swift */,
+				B429E3CD246B575C0003C7B1 /* Homeworld.swift */,
+				B4018B5E246B799E00D26633 /* Vehicle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -302,7 +314,10 @@
 			files = (
 				B430A350246B2E530043F4D8 /* FilmsVC.swift in Sources */,
 				B479DC472468F14A00F002CA /* Constants.swift in Sources */,
+				B429E3D0246B57B10003C7B1 /* HomeworldApi.swift in Sources */,
+				B4018B5F246B799E00D26633 /* Vehicle.swift in Sources */,
 				B430A34A246B2E260043F4D8 /* HomeWorldVC.swift in Sources */,
+				B4018B61246B7F6300D26633 /* VehicleApi.swift in Sources */,
 				B46097612469127800854C49 /* PersonApi.swift in Sources */,
 				B430A34C246B2E350043F4D8 /* VehiclesVC.swift in Sources */,
 				B430A34E246B2E410043F4D8 /* StarShipsVC.swift in Sources */,
@@ -310,6 +325,7 @@
 				B479DC442468F0DB00F002CA /* BlackBgView.swift in Sources */,
 				B460976324691ABF00854C49 /* Person.swift in Sources */,
 				B49236212468B80100A89EB3 /* AppDelegate.swift in Sources */,
+				B429E3CE246B575C0003C7B1 /* Homeworld.swift in Sources */,
 				B458423C246B21EB00420053 /* FadeEnabledBtn.swift in Sources */,
 				B49236232468B80100A89EB3 /* SceneDelegate.swift in Sources */,
 			);
